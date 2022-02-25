@@ -3,6 +3,7 @@
     package="com.jonareas.taxer">
 
     <application
+        android:name=".TaxerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_taxer"
         android:label="@string/app_name"

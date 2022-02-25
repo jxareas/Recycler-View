@@ -11,6 +11,29 @@
         android:name="com.jonareas.taxer.view.worker.WorkerListFragment"
         android:label="WorkerListFragment"
         tools:layout="@layout/fragment_worker_list"
+        >
+        <action
+            android:id="@+id/workerList_to_addWorker"
+            app:destination="@id/addWorkerFragment" />
+        <action
+            android:id="@+id/workerList_to_workerDetail"
+            app:destination="@id/workerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWorkerFragment"
+        android:name="com.jonareas.taxer.view.worker.AddWorkerFragment"
+        android:label="AddWorkerFragment"
+        tools:layout="@layout/fragment_add_worker"
         />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.jonareas.taxer.view.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/workerDetailFragment"
+        android:name="com.jonareas.taxer.view.worker.WorkerDetailFragment"
+        android:label="fragment_worker_detail"
+        tools:layout="@layout/fragment_worker_detail" />
 
 </navigation>

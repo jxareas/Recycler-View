@@ -6,6 +6,7 @@
         android:title="@string/worker_list"
         android:icon="@drawable/ic_worker"
         />
+
     <item
         android:id="@+id/aboutFragment"
         android:title="@string/about"
