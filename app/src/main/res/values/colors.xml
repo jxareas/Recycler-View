@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sea_green">#0E8241</color>
+    <color name="sunflower_green_700">#005d2b</color>
+    <color name="dark_blue">#000D5D</color>
+    <color name="dark_turquoise">#005D5D</color>
+    <color name="gradient_stop">#FDC830</color>
+    <color name="light_gray">#ececec</color>
+    <color name="dark_gray">#767676</color>
+    <color name="deep_yellow">#FFF323</color>
+    <color name="yellow">#FFCA03</color>
+    <color name="gradient_mid">#F12C20</color>
+    <color name="deep_orange">#FE4500</color>
+    <color name="matte_black">#171717</color>
+    <color name="purple_maximum">#784072</color>
+    <color name="polished_white">#F0F8FF</color>
+    <color name="alice_blue">#DBE9F4</color>
+    <color name="anti_flash_white">#F4F6F9</color>
+    <color name="forest_green">#006837</color>
+    <color name="dark_red">#8B0000</color>
+    <color name="blue_grey">#444851</color>
+    <color name="dark_blue_grey">#333333</color>
+    <color name="grey_800">#424242</color>
+</resources>

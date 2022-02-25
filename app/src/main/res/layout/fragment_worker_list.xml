@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        tools:context=".view.worker.WorkerListFragment">
+
+        <TextView
+            android:id="@+id/text_view_full_name"
+            style="@style/Widget.Inventory.Header"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:text="@string/full_name"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_salary"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_salary"
+            style="@style/Widget.Inventory.Header"
+            android:layout_below="@+id/text_view_full_name"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:text="@string/salary"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/text_view_full_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view_worker_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_salary" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_worker_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:listitem="@layout/list_item_worker"
+            tools:itemCount="10"
+            />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_worker"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/content_description_fab_add_worker"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/workerListFragment"
+        android:title="@string/worker_list"
+        android:icon="@drawable/ic_worker"
+        />
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/about"
+        android:icon="@drawable/ic_help"
+        />
+
+</menu>

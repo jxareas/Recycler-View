@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Taxer</string>
+    <string name="hello_blank_fragment">Lorem Ipsum Dolor Sit Amet</string>
+    <string name="full_name">Full Name</string>
+    <string name="salary">Salary</string>
+    <string name="worker_list">Worker List</string>
+    <string name="about">About</string>
+    <string name="content_description_fab_add_worker">Add a new worker</string>
+    <string name="add_worker">Add Worker</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="worker_detail">Worker Detail</string>
+    <string name="content_description_logo">Taxer Logo</string>
+    <string name="taxer_about_description">Taxer is a simple app made to showcase the use of several Android Jetpack Libraries &amp; Architecture Components featured in the Android Basics in Kotlin Series, such as Data Binding, ROOM, Navigation, LiveData, ViewModel, Flow, etc.</string>
+    <string name="taxes">taxes</string>
+    <string name="net_salary">Net Salary</string>
+    <string name="delete">delete</string>
+</resources>

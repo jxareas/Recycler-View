@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view_full_name"
+        style="@style/Widget.Inventory.ListItemTextView"
+        android:layout_width="180dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/text_view_salary"
+        style="@style/Widget.Inventory.ListItemTextView"
+        android:layout_width="100dp"
+        android:layout_below="@+id/text_view_full_name"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$1499.99" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
