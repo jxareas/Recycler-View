@@ -35,14 +35,18 @@ class WorkerListFragment : Fragment() {
     }
 
     private fun setupListeners() : Unit = binding.fabAddWorker.setOnClickListener {
-        findNavController().navigate(WorkerListFragmentDirections.workerListToAddWorker())
+        findNavController().navigate(WorkerListFragmentDirections
+            .workerListToAddWorker()
+        )
     }
 
     private fun setupRecyclerView() : Unit = binding.recyclerViewWorkerList.run {
 
         layoutManager = LinearLayoutManager(activity)
-        val workerAdapter = WorkerAdapter {
-            findNavController().navigate(WorkerListFragmentDirections.workerListToWorkerDetail())
+        val workerAdapter = WorkerAdapter { worker ->
+            findNavController().navigate(WorkerListFragmentDirections.workerListToWorkerDetail
+                (worker.fullName,
+                worker.workerId))
         }
         adapter = workerAdapter
 

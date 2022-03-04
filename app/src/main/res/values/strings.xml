@@ -2,7 +2,7 @@
     <string name="app_name">Taxer</string>
     <string name="hello_blank_fragment">Lorem Ipsum Dolor Sit Amet</string>
     <string name="full_name">Full Name</string>
-    <string name="salary">Salary</string>
+    <string name="salary">Salary ($)</string>
     <string name="worker_list">Worker List</string>
     <string name="about">About</string>
     <string name="content_description_fab_add_worker">Add a new worker</string>
@@ -17,4 +17,6 @@
     <string name="taxes">taxes</string>
     <string name="net_salary">Net Salary</string>
     <string name="delete">delete</string>
+    <string name="action_selected">%d selected</string>
+    <string name="price_format">$ %.2f</string>
 </resources>

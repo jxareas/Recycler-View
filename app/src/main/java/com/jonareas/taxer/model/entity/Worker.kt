@@ -18,7 +18,7 @@ data class Worker(
 ) :  Persistable {
 
     val fullName : String
-        get() = "$firstName $salary"
+        get() = "$firstName $surname"
 
     val taxes : Double
         get() = salary * DEFAULT_TAX_RATE

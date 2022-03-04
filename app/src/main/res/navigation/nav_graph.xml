@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/workerListFragment"
         android:name="com.jonareas.taxer.view.worker.WorkerListFragment"
-        android:label="WorkerListFragment"
+        android:label="@string/worker_list"
         tools:layout="@layout/fragment_worker_list"
         >
         <action
@@ -22,18 +22,25 @@
     <fragment
         android:id="@+id/addWorkerFragment"
         android:name="com.jonareas.taxer.view.worker.AddWorkerFragment"
-        android:label="AddWorkerFragment"
+        android:label="@string/add_worker"
         tools:layout="@layout/fragment_add_worker"
         />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.jonareas.taxer.view.about.AboutFragment"
-        android:label="fragment_about"
+        android:label="@string/about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/workerDetailFragment"
         android:name="com.jonareas.taxer.view.worker.WorkerDetailFragment"
-        android:label="fragment_worker_detail"
-        tools:layout="@layout/fragment_worker_detail" />
+        android:label="{title}"
+        tools:layout="@layout/fragment_worker_detail" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="workerId"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>
