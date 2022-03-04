@@ -12,6 +12,6 @@ interface WorkerDao : BaseDao<Worker> {
     override fun getAll(): Flow<List<Worker>>
 
     @Query("SELECT * FROM Worker where workerId = :id")
-    override fun getById(id: Int): Flow<Worker>
+    override fun getById(id: Long): Flow<Worker>
 
 }

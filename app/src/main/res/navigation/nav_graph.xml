@@ -40,7 +40,7 @@
             app:argType="string" />
         <argument
             android:name="workerId"
-            app:argType="integer" />
+            app:argType="long" />
     </fragment>
 
 </navigation>

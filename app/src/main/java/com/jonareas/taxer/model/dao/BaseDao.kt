@@ -21,7 +21,10 @@ interface BaseDao<T : Persistable> {
     @Delete
     fun delete(entity : T)
 
-    fun getById(id : Int) : Flow<T>
+    @Delete
+    fun delete(vararg entity : T)
+
+    fun getById(id : Long) : Flow<T>
 
     fun getAll() : Flow<List<T>>
 

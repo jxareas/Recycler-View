@@ -11,7 +11,7 @@ class WorkerDetailViewModel : ViewModel() {
 
     private val workerDao = TaxerApplication.database.workerDao
 
-    fun getWorker(id : Int) = workerDao.getById(id)
+    fun getWorker(id : Long) = workerDao.getById(id)
 
     fun updateWorker(worker : Worker) {
         viewModelScope.launch(Dispatchers.IO) {

@@ -14,7 +14,7 @@ data class Worker(
     @ColumnInfo(name = "salary") @NotNull
     val salary : Double,
     @PrimaryKey(autoGenerate = true) @NotNull
-    val workerId : Int = 0
+    val workerId : Long = 0
 ) :  Persistable {
 
     val fullName : String
