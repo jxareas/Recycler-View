@@ -1,5 +1,6 @@
 package com.jonareas.taxer.view.worker
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.coroutineScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.R.*
+import com.google.android.material.transition.MaterialContainerTransform
+import com.jonareas.taxer.R
 import com.jonareas.taxer.databinding.FragmentWorkerDetailBinding
 import com.jonareas.taxer.model.entity.Worker
 import com.jonareas.taxer.utils.double
@@ -24,7 +28,16 @@ class WorkerDetailFragment : Fragment() {
         get() = _binding!!
 
     private val viewModel : WorkerDetailViewModel by viewModels()
-    private val navArgs : WorkerDetailFragmentArgs by navArgs<WorkerDetailFragmentArgs>()
+    private val navArgs : WorkerDetailFragmentArgs by navArgs()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        sharedElementEnterTransition = MaterialContainerTransform().apply {
+            drawingViewId = R.id.nav_host_fragment_main
+            scrimColor = Color.TRANSPARENT
+            duration = 500L
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

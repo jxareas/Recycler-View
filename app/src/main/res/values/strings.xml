@@ -10,6 +10,8 @@
     <string name="surname">Surname</string>
     <string name="first_name">First Name</string>
     <string name="save">Save</string>
+    <string name="worker_transition_name">worker_transition_name</string>
+    <string name="fab_transition_name">fab_transition_name</string>
     <string name="cancel">Cancel</string>
     <string name="worker_detail">Worker Detail</string>
     <string name="content_description_logo">Taxer Logo</string>

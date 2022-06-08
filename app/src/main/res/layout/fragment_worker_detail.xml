@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -12,9 +13,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginHorizontal="@dimen/margin_standard"
+        android:paddingHorizontal="@dimen/margin_standard"
         android:orientation="vertical"
 
+        android:transitionName="@string/worker_transition_name"
         tools:context=".view.worker.WorkerDetailFragment">
 
         <TextView

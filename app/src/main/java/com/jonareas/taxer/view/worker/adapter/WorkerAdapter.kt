@@ -3,6 +3,7 @@ package com.jonareas.taxer.view.worker.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import androidx.recyclerview.selection.ItemDetailsLookup
 import androidx.recyclerview.selection.SelectionTracker
 import androidx.recyclerview.widget.DiffUtil
@@ -35,6 +36,10 @@ class WorkerAdapter(private val listener : OnViewHolderClick<Worker>) :
             }
 
             fun bind(worker : Worker) : Unit = binding.run {
+
+                val transitionName = root.context.getString(R.string.worker_transition_name)
+                ViewCompat.setTransitionName(root, "$transitionName$itemId}")
+
                 textViewFullName.text = worker.fullName
                 textViewSalary.text = worker.salary.toString()
 

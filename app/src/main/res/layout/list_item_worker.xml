@@ -4,6 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingBottom="@dimen/margin_standard"
+    android:background="@color/white"
     android:layout_height="wrap_content">
 
     <TextView
@@ -11,6 +13,7 @@
         style="@style/Widget.Inventory.ListItemTextView"
         android:layout_width="180dp"
         android:fontFamily="sans-serif"
+        android:textStyle="bold"
         android:layout_marginStart="@dimen/margin_small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
